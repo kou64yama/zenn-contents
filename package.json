@@ -1,0 +1,16 @@
+{
+  "name": "zenn",
+  "private": true,
+  "author": "Yamada Koji <kou64yama@gmail.com>",
+  "scripts": {
+    "postinstall": "hysky install"
+  },
+  "dependencies": {
+    "zenn-cli": "^0.1.72"
+  },
+  "devDependencies": {
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  }
+}
