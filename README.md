@@ -1,5 +1,7 @@
 # Zenn Contents
 
+[![Lint](https://github.com/kou64yama/zenn-contents/workflows/Lint/badge.svg?branch=main&event=push)](https://github.com/kou64yama/zenn-contents/actions?query=workflow:Lint+branch:main+event:push)
+
 ## Requirements
 
 - [Node.js](https://nodejs.org)
