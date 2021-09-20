@@ -3,20 +3,20 @@
   "private": true,
   "author": "Yamada Koji <kou64yama@gmail.com>",
   "scripts": {
-    "postinstall": "husky install",
-    "lint": "textlint README.md articles books"
+    "prepare": "husky install",
+    "lint": "textlint ."
   },
   "dependencies": {
     "zenn-cli": "^0.1.72"
   },
   "devDependencies": {
-    "husky": "^5.0.9",
-    "lint-staged": "^10.5.4",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.2.1",
-    "textlint": "^11.8.2",
+    "textlint": "^12.0.2",
     "textlint-rule-preset-ja-spacing": "^2.0.2",
-    "textlint-rule-preset-ja-technical-writing": "^4.0.1",
-    "textlint-rule-preset-japanese": "^5.0.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0",
+    "textlint-rule-preset-japanese": "^7.0.0",
     "textlint-rule-preset-jtf-style": "^2.3.6"
   }
 }
