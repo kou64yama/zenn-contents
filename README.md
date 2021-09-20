@@ -8,7 +8,7 @@
 
 ## Getting started
 
-[pnpm](https://github.com/pnpm/pnpm)がインストールされてない場合，まずはpnpmをインストールしてください．
+[pnpm](https://github.com/pnpm/pnpm)がインストールされてない場合，まずは pnpm をインストールしてください．
 
 ```shell
 $ npm install -g pnpm
