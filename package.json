@@ -7,16 +7,16 @@
     "lint": "textlint ."
   },
   "dependencies": {
-    "zenn-cli": "^0.1.72"
+    "zenn-cli": "^0.1.99"
   },
   "devDependencies": {
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.2.1",
-    "textlint": "^12.0.2",
-    "textlint-rule-preset-ja-spacing": "^2.0.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
+    "textlint": "^12.1.0",
+    "textlint-rule-preset-ja-spacing": "^2.2.0",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-preset-japanese": "^7.0.0",
-    "textlint-rule-preset-jtf-style": "^2.3.6"
+    "textlint-rule-preset-jtf-style": "^2.3.12"
   }
 }
