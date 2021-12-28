@@ -7,11 +7,11 @@
     "lint": "textlint ."
   },
   "dependencies": {
-    "zenn-cli": "^0.1.99"
+    "zenn-cli": "^0.1.100"
   },
   "devDependencies": {
     "husky": "^7.0.4",
-    "lint-staged": "^12.1.2",
+    "lint-staged": "^12.1.4",
     "prettier": "^2.5.1",
     "textlint": "^12.1.0",
     "textlint-rule-preset-ja-spacing": "^2.2.0",
