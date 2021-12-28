@@ -11,30 +11,30 @@
 
 [pnpm](https://github.com/pnpm/pnpm) がインストールされてない場合，まずは pnpm をインストールしてください．
 
-```shell
-$ npm install -g pnpm
+```bash
+npm install -g pnpm
 ```
 
 リポジトリをクローンしてください．
 
-```shell
-$ git clone https://github.com/kou64yama/zenn-contents.git
-$ cd zenn-contents
+```bash
+git clone https://github.com/kou64yama/zenn-contents.git
+cd zenn-contents
 ```
 
 依存モジュールをインストールしてください．
 
-```shell
-$ pnpm install
+```bash
+pnpm install
 ```
 
 次のコマンドを実行してください．
 
-```shell
-$ npx zenn preview
+```bash
+npx zenn preview
 ```
 
-http://localhost:8080 にプレビューサーバーが起動します．
+<http://localhost:8080> にプレビューサーバーが起動します．
 
 ## Documents
 
