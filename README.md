@@ -5,6 +5,7 @@
 ## Requirements
 
 - [Node.js](https://nodejs.org)
+- [pnpm](https://github.com/pnpm/pnpm)
 
 ## Getting started
 
