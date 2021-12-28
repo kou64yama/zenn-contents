@@ -141,7 +141,7 @@ COPY --from=builder /workspace/build /usr/share/nginx/html
 
 `package.json` の変更なんてそんなにない？`package.json` に `eslintConfig` や `browserslist` を書いてたりしませんか？`version` はずっと同じですか？依存パッケージを追加，削除，バージョンアップすることありませんか？その度に全パッケージダウンロードするのは厳しいでしょう．
 
-## 方法 3. `--mount=type=cache` を使う
+### 方法 3. `--mount=type=cache` を使う
 
 :::message
 [BuildKit](https://github.com/moby/buildkit) を使っていることが前提です．`/etc/docker/daemon.json` や Docker Desktop の設定で `features.buildkit=true` となっていることを確認してください．
@@ -196,7 +196,7 @@ https://docs.docker.com/develop/develop-images/build_enhancements/#overriding-de
 
 やったね！
 
-### 補足 1. `node_modules` をキャッシュしてもいいのでは？
+#### 補足 1. `node_modules` をキャッシュしてもいいのでは？
 
 `/workspace/node_modules` をキャッシュする方が速いですが，実行時にも使うなら `npm install --production` して `devDependencies` を削除することもあります．そうすると `devDependencies` の分はまたダウンロードからやり直しになってしまうので `/root/.npm` を指定しました．
 
@@ -209,7 +209,7 @@ RUN \
   npm install
 ```
 
-### 補足 2. Yarn や pnpm の場合は？
+#### 補足 2. Yarn や pnpm の場合は？
 
 Yarn や pnpm の場合，パッケージの lock ファイルは `package-lock.json` ではなく，それぞれ `yarn.lock`, `pnpm-lock.yaml` です．また，キャッシュディレクトリは `/usr/local/share/.cache/yarn/v6`，`/root/.pnpm-store` です．
 
@@ -217,7 +217,7 @@ Yarn や pnpm の場合，パッケージの lock ファイルは `package-lock.
 
 pnpm には実験的なコマンドですが [`pnpm fetch`](https://pnpm.io/ja/cli/fetch) という `pnpm-lock.yaml` だけでパッケージをダウンロードするコマンドもあります．こちらを使えば `package.json` の変更にさらに強くなります．ただし，pnpm は [node](https://hub.docker.com/_/node) のイメージには含まれないのでその点は注意が必要です．
 
-### 補足 3. APT や yum の場合
+#### 補足 3. APT や yum の場合
 
 ここまで npm を例にして書いてきましたが，APT や yum を使って追加パッケージを入れたいときもありますね．`RUN --mount=type=cache` はそんなときにも活躍しますよ．
 
@@ -245,7 +245,7 @@ RUN --mount=type=cache,target=/var/cache/yum \
   && yum install -y kernel-devel kernel-headers
 ```
 
-### 補足 4. BuildKit が使えないんだけど…
+#### 補足 4. BuildKit が使えないんだけど…
 
 - 「うちで使っていい Docker はバージョンが指定されていて BuildKit より前のバージョンなんだ」
 - 「CI/CD が BuildKit 使えない環境なんだ」
