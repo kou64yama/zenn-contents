@@ -1,5 +1,5 @@
 {
-  "name": "zenn",
+  "name": "zenn-contents",
   "private": true,
   "author": "Yamada Koji <kou64yama@gmail.com>",
   "scripts": {
@@ -7,16 +7,18 @@
     "lint": "textlint ."
   },
   "dependencies": {
-    "zenn-cli": "^0.1.100"
+    "zenn-cli": "^0.1.117"
   },
   "devDependencies": {
-    "husky": "^7.0.4",
-    "lint-staged": "^12.1.4",
-    "prettier": "^2.5.1",
-    "textlint": "^12.1.0",
+    "@textlint/ast-node-types": "^12.2.1",
+    "@textlint/types": "^12.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "textlint": "^12.2.1",
     "textlint-rule-preset-ja-spacing": "^2.2.0",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-preset-japanese": "^7.0.0",
-    "textlint-rule-preset-jtf-style": "^2.3.12"
+    "textlint-rule-preset-jtf-style": "^2.3.13"
   }
 }
