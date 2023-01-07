@@ -2,6 +2,7 @@
   "name": "zenn-contents",
   "private": true,
   "author": "Yamada Koji <kou64yama@gmail.com>",
+  "type": "module",
   "scripts": {
     "prepare": "husky install",
     "lint": "textlint ."
