@@ -10,7 +10,7 @@ published: true
 
 - 依存パッケージのダウンロードは最初に実行しよう
 - マルチステージビルドは必須と覚えておこう
-- [`RUN --mount=cache=type`](https://github.com/moby/buildkit/blob/master/frontend/dockerfile/docs/syntax.md#run---mounttypecache) を使おう（でも BuildKit を使えるかは確認して！）
+- [`RUN --mount=type=cache`](https://github.com/moby/buildkit/blob/master/frontend/dockerfile/docs/syntax.md#run---mounttypecache) を使おう（でも BuildKit を使えるかは確認して！）
 - [`pnpm fetch`](https://pnpm.io/ja/cli/fetch) も期待大
 
 ## はじめに
