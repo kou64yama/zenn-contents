@@ -3,7 +3,7 @@ title: Nature Remo で自宅環境ダッシュボードを作る
 emoji: 📊
 type: idea
 topics: [natureremo, prometheus, grafana]
-published: false
+published: true
 ---
 
 ## はじめに
