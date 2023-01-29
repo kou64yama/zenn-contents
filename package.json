@@ -2,21 +2,22 @@
   "name": "zenn-contents",
   "private": true,
   "author": "Yamada Koji <kou64yama@gmail.com>",
+  "type": "module",
   "scripts": {
     "prepare": "husky install",
     "lint": "textlint ."
   },
   "dependencies": {
-    "zenn-cli": "^0.1.117"
+    "zenn-cli": "^0.1.137"
   },
   "devDependencies": {
-    "@textlint/ast-node-types": "^12.2.1",
-    "@textlint/types": "^12.2.1",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "textlint": "^12.2.1",
-    "textlint-rule-preset-ja-spacing": "^2.2.0",
+    "@textlint/ast-node-types": "^12.6.1",
+    "@textlint/types": "^12.6.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "textlint": "^12.6.1",
+    "textlint-rule-preset-ja-spacing": "^2.3.0",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-preset-japanese": "^7.0.0",
     "textlint-rule-preset-jtf-style": "^2.3.13"
