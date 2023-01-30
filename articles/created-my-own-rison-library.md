@@ -2,7 +2,7 @@
 title: Rison ライブラリを自作してみた
 emoji: 🔗
 type: tech
-topics: [rison]
+topics: [rison, npm]
 published: true
 ---
 
