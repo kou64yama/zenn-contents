@@ -19,17 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
           check-latest: true
-      - name: Cache ~/.pnpm-store
-        uses: actions/cache@main
-        env:
-          cache-name: cache-pnpm-store
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-${{ matrix.node }}-build-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-${{ matrix.node }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-${{ matrix.node }}-build-
-            ${{ runner.os }}-
+          cache: pnpm
       - uses: pnpm/action-setup@v2
       - run: pnpm install
       - run: pnpm run lint
