@@ -14,8 +14,8 @@ jobs:
     name: Node ${{ matrix.node }}
     steps:
       - uses: actions/checkout@main
-      - name: Use Node.js ${{ matrix.node }}.x
-        uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
           check-latest: true
@@ -30,9 +30,6 @@ jobs:
             ${{ runner.os }}-${{ matrix.node }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-${{ matrix.node }}-build-
             ${{ runner.os }}-
-      - name: Install pnpm
-        run: npm i -g pnpm
-      - name: Lint
-        run: |
-          pnpm install
-          pnpm run lint
+      - uses: pnpm/action-setup@v2
+      - run: pnpm install
+      - run: pnpm run lint
