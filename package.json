@@ -3,6 +3,7 @@
   "private": true,
   "author": "Yamada Koji <kou64yama@gmail.com>",
   "type": "module",
+  "packageManager": "pnpm@7.33.5",
   "scripts": {
     "prepare": "husky install",
     "lint": "textlint ."
