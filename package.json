@@ -5,22 +5,22 @@
   "type": "module",
   "packageManager": "pnpm@8.6.10",
   "scripts": {
-    "prepare": "husky install",
-    "lint": "textlint ."
+    "prepare": "husky",
+    "lint": "textlint \"articles/**/*.md\" \"books/**/*.md\" \"README.md\""
   },
   "dependencies": {
-    "zenn-cli": "^0.1.144"
+    "zenn-cli": "^0.2.1"
   },
   "devDependencies": {
-    "@textlint/ast-node-types": "^13.3.3",
-    "@textlint/types": "^13.3.3",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
-    "prettier": "^3.0.0",
-    "textlint": "^13.3.3",
-    "textlint-rule-preset-ja-spacing": "^2.3.0",
-    "textlint-rule-preset-ja-technical-writing": "^8.0.0",
-    "textlint-rule-preset-japanese": "^8.0.0",
-    "textlint-rule-preset-jtf-style": "^2.3.13"
+    "@textlint/ast-node-types": "^15.2.1",
+    "@textlint/types": "^15.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "textlint": "^15.2.1",
+    "textlint-rule-preset-ja-spacing": "^2.4.3",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+    "textlint-rule-preset-japanese": "^10.0.4",
+    "textlint-rule-preset-jtf-style": "^3.0.2"
   }
 }
