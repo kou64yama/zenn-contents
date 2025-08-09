@@ -1,6 +1,6 @@
 # Zenn Contents
 
-[![Lint](https://github.com/kou64yama/zenn-contents/workflows/Lint/badge.svg?branch=main&event=push)](https://github.com/kou64yama/zenn-contents/actions?query=workflow:Lint+branch:main+event:push)
+[![Lint](https://github.com/kou64yama/zenn-contents/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/kou64yama/zenn-contents/actions/workflows/lint.yml)
 
 ## Requirements
 
