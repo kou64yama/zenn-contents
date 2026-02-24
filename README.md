@@ -4,7 +4,7 @@
 
 ## Requirements
 
-- [Node.js](https://nodejs.org)
+- [Node.js](https://nodejs.org) (Active LTS and Maintenance LTS are supported. Please refer to [Node.js Previous Releases](https://nodejs.org/en/about/previous-releases) for more details.)
 - [pnpm](https://github.com/pnpm/pnpm)
 
 ## Getting started
